@@ -2,14 +2,21 @@ package com.example.assessment.APIS
 
 import android.telecom.Call
 import com.example.assessment.Calculator
+import retrofit2.http.GET
+import retrofit2.http.Path
 
 
 interface ApiInterface{
     @GET("posts")
-    fun getCalculator(): Call<List<Calculator>>
+    fun getPosts(): retrofit2.Call<List<Calculator>>
 
-    @GET("posts/{add}")
-    fun getCalculator(): Call<>
+    @GET("posts/{id}")
+    fun  getPostById(@Path("id")postId: Int): retrofit2.Call<Calculator>
+
+
+
+
+
 
 
 //@GET("posts")
