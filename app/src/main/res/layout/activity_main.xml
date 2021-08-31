@@ -30,29 +30,18 @@
         app:layout_constraintStart_toEndOf="@+id/etAddition"
         tools:layout_editor_absoluteY="59dp" />
 
-    <TextView
-        android:id="@+id/tvMultiplication"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:text="Multiplication"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etAddition" />
-
     <EditText
         android:id="@+id/etMultiplication"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMultiplication" />
+        tools:layout_editor_absoluteY="155dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnAddition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -65,9 +54,9 @@
         android:id="@+id/btnSubtraction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="13dp"
         android:text="Subtraction"
-        app:layout_constraintEnd_toStartOf="@+id/etSubtraction"
+        app:layout_constraintStart_toEndOf="@+id/btnAddition"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
